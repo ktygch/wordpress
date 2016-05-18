@@ -1,0 +1,104 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: #222;
+  transition: all 0.2s ease-in-out;
+}
+
+.brandon {
+  font-family: "brandon-grotesque";
+}
+
+.futura {
+  font-family: "futura-pt",sans-serif;
+}
+
+.azo {
+  font-family: "azo-sans-web",sans-serif;
+}
+
+.azo-uber {
+  font-family: "azo-sans-uber",sans-serif;
+}
+
+.mono {
+  font-family: "mono45-headline",sans-serif;
+}
+
+@-moz-keyframes move {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: -10px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: -10px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@keyframes move {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: -10px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@-moz-keyframes bgHeader {
+  0% {
+    background-position: 0px, 0px;
+  }
+  100% {
+    background-position: -4000px, 0px;
+  }
+}
+@-webkit-keyframes bgHeader {
+  0% {
+    background-position: 0px, 0px;
+  }
+  100% {
+    background-position: -4000px, 0px;
+  }
+}
+@keyframes bgHeader {
+  0% {
+    background-position: 0px, 0px;
+  }
+  100% {
+    background-position: -4000px, 0px;
+  }
+}
+.bg_dot {
+  background-color: #fff;
+  background-image: radial-gradient(#0e0e38 20%, rgba(0, 0, 0, 0) 21%), radial-gradient(#0e0e38 20%, rgba(0, 0, 0, 0) 21%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+.bg_slash {
+  background-color: #fff;
+  background-image: url(../image/bg_slash.png);
+  background-repeat: repeat;
+  background-position: center center;
+}

@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "compass";
+//----------------------------------------------------------
+//----------------------------------------------------------
+$imgPath: '../image/';
+//----------------------------------------------------------
+//----------------------------------------------------------
+//clearfix
+$supportIE: true; // IE非対応の場合 false
+.clearfix{
+    @if $supportIE{
+        *zoom: 1;
+    }
+    &:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+//----------------------------------------------------------
+//----------------------------------------------------------
+a{
+    color: #222;
+    transition: all 0.2s ease-in-out;
+}
+//----------------------------------------------------------
+//----------------------------------------------------------
+//site colors
+$base-a: #fcaab4;
+$base-b: #f97d8b;
+$base-c: #f5586b;
+$base-d: #e53549;
+$base-e: #c11327;
+
+$ground-a: #e5d9c8;
+$ground-b: #d6c4aa;
+$ground-c: #d6c4aa;
+$ground-d: #c9b191;
+$ground-e: #947b57;
+//site colors END
+//----------------------------------------------------------
+//----------------------------------------------------------
+//フォント
+.brandon{
+    font-family: "brandon-grotesque";
+}
+
+.futura{
+    font-family: "futura-pt",sans-serif;
+}
+
+.azo{
+    font-family: "azo-sans-web",sans-serif;
+}
+
+.azo-uber{
+  font-family: "azo-sans-uber",sans-serif;
+}
+
+.mono{
+  font-family: "mono45-headline",sans-serif;
+}
+//----------------------------------------------------------
+//----------------------------------------------------------
+//scrolldown アニメーション
+@include keyframes(move) {
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: -10px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+@include keyframes(bgHeader){
+    0%{
+        background-position: 0px, 0px;
+    }
+    100%{
+        background-position: -4000px, 0px;
+    }
+}
+
+//----------------------------------------------------------
+//----------------------------------------------------------
+.bg_dot{
+    background-color: #fff;
+    background-image: radial-gradient(#0e0e38 20%, transparent 21%), radial-gradient(#0e0e38 20%, transparent 21%);
+    background-size:40px 40px;
+    background-position: 0 0, 20px 20px;
+}
+
+.bg_slash{
+    background: {
+        color: #fff;
+        image: url(#{$imgPath}bg_slash.png);
+        repeat: repeat;
+        position: center center;
+    }
+}
