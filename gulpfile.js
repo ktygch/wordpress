@@ -1,17 +1,9 @@
 // JavaScript Document
 var gulp = require("gulp");
-//var ejs = require("gulp-ejs");
 var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
 var uglify = require("gulp-uglify");
 var plumber = require("gulp-plumber");
-
-gulp.task("ejs", function(){
-    gulp.src(["ejs/**/*.ejs", "!ejs/**/_*.ejs"])
-    .pipe(plumber())
-    .pipe(ejs({}, {ext: '.html'}))
-    .pipe(gulp.dest("./html"));
-});
 
 gulp.task("js", function(){
     gulp.src(["js/**/*.js", "!js/min/**/*.js"])
